@@ -1,11 +1,11 @@
 !(function (exports) {
 
-  var button = $("#mybutton");
+  var button = $('#mybutton');
 
-  var saluta = function(event) {
+  var greets = function(event) {
   	alert("Hello Web");
   }
 
-  button.on("click",saluta);
+  button.on('click',greets);
 
 }(this));
