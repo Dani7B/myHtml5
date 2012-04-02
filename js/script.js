@@ -4,7 +4,7 @@
   var button = $(#mybutton);
 
   var saluta = function(event) {
-  	alert(Hello Web);
+  	alert("Hello Web");
   }
 
   button.on("click",saluta);
