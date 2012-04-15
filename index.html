@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>HTML5 crumbs</title>
+  <title>My HTML5 crumbs</title>
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
   <header>
-    <h1>HTML5 crumbs</h1>
+    <h1>My HTML5</h1>
   </header>
   <section>
     <div class="container">
+      <h3>Colore di sfondo dei container</h3>
       <button type="button" id="button-white">White</button>
       <button type="button" id="button-gray">Gray</button>
     </div>
     <div class="container">
-      <canvas id="paper" width="400" height="300">
+      <h3>Canvas<h3>
+      <canvas id="paper" width="520" height="390">
         Your browser doesn't support HTML5 Canvas.
       </canvas>
     </div>
     <div class="container">
-      <h3> Clear canvas </h3>
+      <h3> Pulisci il canvas </h3>
       <button type="button" id="clear">Clear</button>
+    </div>
+    <div class="container">
+      <h3>Raggio del cerchio</h3>
+      <input id="slider-radius" type="range" min="5" max="30" value="15" step="1" />
+      <span id="monitor-radius">15</span>
+    </div>
+    <div class="container">
+      <h3>Colore di sfondo del canvas </h3>
+      <div><span>R</span><input id="slider-bg-red" type="range" min="0" max="255" value="232" step="1" /></div>
+      <div><span>G</span><input id="slider-bg-green" type="range" min="0" max="255" value="232" step="1" /></div>
+      <div><span>B</span><input id="slider-bg-blue" type="range" min="0" max="255" value="232" step="1" /></div>
+    </div>
+    <div class="container">
+      <h3>Colore del cerchio</h3>
+      <div id="color-monitor"></div>
+      <div><span>R</span><input id="slider-circle-red" type="range" min="0" max="255" value="0" step="1" /></div>
+      <div><span>G</span><input id="slider-circle-green" type="range" min="0" max="255" value="0" step="1" /></div>
+      <div><span>B</span><input id="slider-circle-blue" type="range" min="0" max="255" value="0" step="1" /></div>
     </div>
   </section>
   <footer>
